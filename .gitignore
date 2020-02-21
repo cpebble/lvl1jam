@@ -170,3 +170,8 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/linux,unity,emacs,windows,visualstudiocode
+*/ShaderCache/*
+*/ShaderCache/
+ShaderCache/
+Temp/
+.ionide/
