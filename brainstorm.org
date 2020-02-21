@@ -1,0 +1,48 @@
+* Left vs discarded
+
+* Travelling
+** GAMEPLAY LOOP
+1. Introduktion til nye ting/level
+2. Bord til kuffert/taske (TIMET)
+3. Bord til skraldespand/inferno
+4. Se det hele blive smidt ud
+5. Transition til næste level
+
+** Luggage pacvking simulator
+** Giv ting affektionsvaerdi og tving spilleren til at forkaste det
+- Hvis du pakker den samme ting flere gange føles det mere 'vigtigt'
+- Spilleren skaber sin egen affektionsværdi
+- Giv ting baghistorier
+- Brænd lortet når du forlader dem
+** Spilleren skal tage valg
+** Levels er forskellige layouts
+** Pak items ind i en kuffert
+*** Regler såsom kun en bamse
+*** Ny sok ned i kufferten
+** Tingene ændrer sig, barnet bliver voksent
+** Vis alle de ting du ikke fik med
+
+
+* Platformer
+** Du skal hente ting tilbage du har mistet
+
+* Spil hvor udfordring er at du har glemt noget
+EG. en håndværker har glemt sin værktøjskasse
+** En soldat/ridder har glemt sin pistol/sværd
+** Dykkeren har glemt sin iltflaske
+** Brandmand har glemt sin brandbil
+Skal slukke brand med tæpper, glas vand
+
+* Følelsen af ikke at kunne følge med
+
+* Lost and found the game
+
+* Orphan simulator
+** LEft behind
+** Implementation of TRAVELLING ^^
+
+* Over floden simulator
+** En ulv, får og salathovede
+** Absurde ting. Du er nød til at efterlade ting
+
+

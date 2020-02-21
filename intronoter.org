@@ -45,7 +45,7 @@ Speaker: Mads johansen @ mads<>
 
 
 * Inspirational talk
-Speaker Amanda Rasmussen <amanda@spilvaerk.dk>
+Speaker: Amanda Rasmussen <amanda@spilvaerk.dk>
 ** Anti-Imposter syndrome in five steps
 - Thick-rimmed glasse
 - Lots of stickers
