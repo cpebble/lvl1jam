@@ -121,6 +121,53 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &285763897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285763899}
+  - component: {fileID: 285763898}
+  m_Layer: 0
+  m_Name: Curser System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &285763898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285763897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb975b333a3cb6a4e97518064cf21e68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gridLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  placementGrid: {fileID: 2047097006}
+--- !u!4 &285763899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285763897}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.6560341, y: -0.19958894, z: -0.44699302}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,6 +251,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2047097006 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1402326721701804762, guid: b95dd3dbf3d411544abc3587ac4c4fb8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1402326721733978221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff63918a7fa043549905693fcd091b6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1402326721733978221
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -284,6 +343,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Drag object
+      objectReference: {fileID: 0}
+    - target: {fileID: 4541692782237266306, guid: cb6bbd814c647334f8d448331ff23f47,
+        type: 3}
+      propertyPath: gridLayer.m_Bits
+      value: 512
       objectReference: {fileID: 0}
     - target: {fileID: 4541692782237266316, guid: cb6bbd814c647334f8d448331ff23f47,
         type: 3}
