@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 1402326720822250347}
   - component: {fileID: 1402326720822250344}
   - component: {fileID: 1402326720822250345}
-  m_Layer: 0
+  - component: {fileID: 5247943547456241956}
+  m_Layer: 9
   m_Name: Cell (21)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,6 +95,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &5247943547456241956
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326720822250350}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326720828119989
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,9 +132,10 @@ GameObject:
   - component: {fileID: 1402326720828119990}
   - component: {fileID: 1402326720828119991}
   - component: {fileID: 1402326720828119988}
-  m_Layer: 0
+  - component: {fileID: 3087079892759265749}
+  m_Layer: 9
   m_Name: Cell (13)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,6 +216,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &3087079892759265749
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326720828119989}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326720868321456
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,9 +253,10 @@ GameObject:
   - component: {fileID: 1402326720868321421}
   - component: {fileID: 1402326720868321458}
   - component: {fileID: 1402326720868321459}
-  m_Layer: 0
+  - component: {fileID: 9096492599062612060}
+  m_Layer: 9
   m_Name: Cell (16)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -282,6 +337,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &9096492599062612060
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326720868321456}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326720878521165
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,9 +374,10 @@ GameObject:
   - component: {fileID: 1402326720878521166}
   - component: {fileID: 1402326720878521167}
   - component: {fileID: 1402326720878521164}
-  m_Layer: 0
+  - component: {fileID: 9180740905535593398}
+  m_Layer: 9
   m_Name: Cell (8)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -376,6 +458,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &9180740905535593398
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326720878521165}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721067232721
 GameObject:
   m_ObjectHideFlags: 0
@@ -387,9 +495,10 @@ GameObject:
   - component: {fileID: 1402326721067232722}
   - component: {fileID: 1402326721067232723}
   - component: {fileID: 1402326721067232720}
-  m_Layer: 0
+  - component: {fileID: 5037685128115944217}
+  m_Layer: 9
   m_Name: Cell (20)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -470,6 +579,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &5037685128115944217
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721067232721}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721094431116
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,9 +616,10 @@ GameObject:
   - component: {fileID: 1402326721094431113}
   - component: {fileID: 1402326721094431118}
   - component: {fileID: 1402326721094431119}
-  m_Layer: 0
+  - component: {fileID: 1796989146902626770}
+  m_Layer: 9
   m_Name: Cell (7)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -564,6 +700,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1796989146902626770
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721094431116}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721209702075
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,9 +737,10 @@ GameObject:
   - component: {fileID: 1402326721209702068}
   - component: {fileID: 1402326721209702069}
   - component: {fileID: 1402326721209702074}
-  m_Layer: 0
+  - component: {fileID: 7745836762466365757}
+  m_Layer: 9
   m_Name: Cell (31)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -658,6 +821,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &7745836762466365757
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721209702075}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721323201958
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,9 +858,10 @@ GameObject:
   - component: {fileID: 1402326721323201955}
   - component: {fileID: 1402326721323201952}
   - component: {fileID: 1402326721323201953}
-  m_Layer: 0
+  - component: {fileID: 8678079159651085727}
+  m_Layer: 9
   m_Name: Cell (30)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -752,6 +942,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &8678079159651085727
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721323201958}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721398756738
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,9 +979,10 @@ GameObject:
   - component: {fileID: 1402326721398756767}
   - component: {fileID: 1402326721398756764}
   - component: {fileID: 1402326721398756765}
-  m_Layer: 0
+  - component: {fileID: 5978845183709024630}
+  m_Layer: 9
   m_Name: Cell (3)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -846,6 +1063,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &5978845183709024630
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721398756738}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721414862711
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,9 +1100,10 @@ GameObject:
   - component: {fileID: 1402326721414862704}
   - component: {fileID: 1402326721414862705}
   - component: {fileID: 1402326721414862710}
-  m_Layer: 0
+  - component: {fileID: 5849906296243087521}
+  m_Layer: 9
   m_Name: Cell (1)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -940,6 +1184,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &5849906296243087521
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721414862711}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721465445354
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,9 +1221,10 @@ GameObject:
   - component: {fileID: 1402326721465445351}
   - component: {fileID: 1402326721465445348}
   - component: {fileID: 1402326721465445349}
-  m_Layer: 0
+  - component: {fileID: 7916499213104397899}
+  m_Layer: 9
   m_Name: Cell
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1034,6 +1305,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &7916499213104397899
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721465445354}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721499854968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1045,9 +1342,10 @@ GameObject:
   - component: {fileID: 1402326721499854965}
   - component: {fileID: 1402326721499854970}
   - component: {fileID: 1402326721499854971}
-  m_Layer: 0
+  - component: {fileID: 2098271856815779954}
+  m_Layer: 9
   m_Name: Cell (23)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1128,6 +1426,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2098271856815779954
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721499854968}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721544603391
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,9 +1463,10 @@ GameObject:
   - component: {fileID: 1402326721544603384}
   - component: {fileID: 1402326721544603385}
   - component: {fileID: 1402326721544603390}
-  m_Layer: 0
+  - component: {fileID: 8620808180195452092}
+  m_Layer: 9
   m_Name: Cell (2)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1222,6 +1547,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &8620808180195452092
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721544603391}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721558943331
 GameObject:
   m_ObjectHideFlags: 0
@@ -1233,9 +1584,10 @@ GameObject:
   - component: {fileID: 1402326721558943356}
   - component: {fileID: 1402326721558943357}
   - component: {fileID: 1402326721558943330}
-  m_Layer: 0
+  - component: {fileID: 6743929720205924733}
+  m_Layer: 9
   m_Name: Cell (12)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1316,6 +1668,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &6743929720205924733
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721558943331}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721701804763
 GameObject:
   m_ObjectHideFlags: 0
@@ -1326,9 +1704,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1402326721701804757}
   - component: {fileID: 1402326721701804762}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Placement Grid
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1443,9 +1821,10 @@ GameObject:
   - component: {fileID: 1402326721708092125}
   - component: {fileID: 1402326721708092098}
   - component: {fileID: 1402326721708092099}
-  m_Layer: 0
+  - component: {fileID: 6029194131464597855}
+  m_Layer: 9
   m_Name: Cell (6)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1526,6 +1905,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &6029194131464597855
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721708092096}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721742367093
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,9 +1942,10 @@ GameObject:
   - component: {fileID: 1402326721742367094}
   - component: {fileID: 1402326721742367095}
   - component: {fileID: 1402326721742367092}
-  m_Layer: 0
+  - component: {fileID: 2789560056802767013}
+  m_Layer: 9
   m_Name: Cell (5)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1620,6 +2026,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2789560056802767013
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721742367093}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721794494186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,9 +2063,10 @@ GameObject:
   - component: {fileID: 1402326721794494183}
   - component: {fileID: 1402326721794494180}
   - component: {fileID: 1402326721794494181}
-  m_Layer: 0
+  - component: {fileID: 6534748543985840145}
+  m_Layer: 9
   m_Name: Cell (28)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1714,6 +2147,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &6534748543985840145
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721794494186}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721851516290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,9 +2184,10 @@ GameObject:
   - component: {fileID: 1402326721851516319}
   - component: {fileID: 1402326721851516316}
   - component: {fileID: 1402326721851516317}
-  m_Layer: 0
+  - component: {fileID: 1109982658750838981}
+  m_Layer: 9
   m_Name: Cell (14)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1808,6 +2268,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1109982658750838981
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721851516290}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721855375117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,9 +2305,10 @@ GameObject:
   - component: {fileID: 1402326721855375118}
   - component: {fileID: 1402326721855375119}
   - component: {fileID: 1402326721855375116}
-  m_Layer: 0
+  - component: {fileID: 8691029238787443725}
+  m_Layer: 9
   m_Name: Cell (27)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1902,6 +2389,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &8691029238787443725
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721855375117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721860816489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,9 +2426,10 @@ GameObject:
   - component: {fileID: 1402326721860816490}
   - component: {fileID: 1402326721860816491}
   - component: {fileID: 1402326721860816488}
-  m_Layer: 0
+  - component: {fileID: 580076181991178179}
+  m_Layer: 9
   m_Name: Cell (15)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1996,6 +2510,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &580076181991178179
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721860816489}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721946604378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,9 +2547,10 @@ GameObject:
   - component: {fileID: 1402326721946604375}
   - component: {fileID: 1402326721946604372}
   - component: {fileID: 1402326721946604373}
-  m_Layer: 0
+  - component: {fileID: 6649512527582805579}
+  m_Layer: 9
   m_Name: Cell (10)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2090,6 +2631,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &6649512527582805579
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721946604378}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326721963990288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2101,9 +2668,10 @@ GameObject:
   - component: {fileID: 1402326721963990509}
   - component: {fileID: 1402326721963990290}
   - component: {fileID: 1402326721963990291}
-  m_Layer: 0
+  - component: {fileID: 2443019548942299907}
+  m_Layer: 9
   m_Name: Cell (34)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2184,6 +2752,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2443019548942299907
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326721963990288}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722155449399
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,9 +2789,10 @@ GameObject:
   - component: {fileID: 1402326722155449392}
   - component: {fileID: 1402326722155449393}
   - component: {fileID: 1402326722155449398}
-  m_Layer: 0
+  - component: {fileID: 860544999510046867}
+  m_Layer: 9
   m_Name: Cell (33)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2278,6 +2873,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &860544999510046867
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722155449399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722190418622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2289,9 +2910,10 @@ GameObject:
   - component: {fileID: 1402326722190418619}
   - component: {fileID: 1402326722190418616}
   - component: {fileID: 1402326722190418617}
-  m_Layer: 0
+  - component: {fileID: 4476895263594885508}
+  m_Layer: 9
   m_Name: Cell (11)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2372,6 +2994,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &4476895263594885508
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722190418622}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722282452908
 GameObject:
   m_ObjectHideFlags: 0
@@ -2383,9 +3031,10 @@ GameObject:
   - component: {fileID: 1402326722282452905}
   - component: {fileID: 1402326722282452910}
   - component: {fileID: 1402326722282452911}
-  m_Layer: 0
+  - component: {fileID: 7134980538446188877}
+  m_Layer: 9
   m_Name: Cell (29)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2466,6 +3115,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &7134980538446188877
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722282452908}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722347337178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,9 +3152,10 @@ GameObject:
   - component: {fileID: 1402326722347337175}
   - component: {fileID: 1402326722347337172}
   - component: {fileID: 1402326722347337173}
-  m_Layer: 0
+  - component: {fileID: 6273479792072112124}
+  m_Layer: 9
   m_Name: Cell (4)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2560,6 +3236,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &6273479792072112124
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722347337178}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722478170023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,9 +3273,10 @@ GameObject:
   - component: {fileID: 1402326722478170016}
   - component: {fileID: 1402326722478170017}
   - component: {fileID: 1402326722478170022}
-  m_Layer: 0
+  - component: {fileID: 2512958976527974380}
+  m_Layer: 9
   m_Name: Cell (35)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2654,6 +3357,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &2512958976527974380
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722478170023}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722489316638
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,9 +3394,10 @@ GameObject:
   - component: {fileID: 1402326722489316635}
   - component: {fileID: 1402326722489316632}
   - component: {fileID: 1402326722489316633}
-  m_Layer: 0
+  - component: {fileID: 499110239351756667}
+  m_Layer: 9
   m_Name: Cell (25)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2748,6 +3478,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &499110239351756667
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722489316638}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722551507050
 GameObject:
   m_ObjectHideFlags: 0
@@ -2759,9 +3515,10 @@ GameObject:
   - component: {fileID: 1402326722551507047}
   - component: {fileID: 1402326722551507044}
   - component: {fileID: 1402326722551507045}
-  m_Layer: 0
+  - component: {fileID: 7252694825487583163}
+  m_Layer: 9
   m_Name: Cell (19)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2842,6 +3599,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &7252694825487583163
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722551507050}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722555783406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,9 +3636,10 @@ GameObject:
   - component: {fileID: 1402326722555783403}
   - component: {fileID: 1402326722555783400}
   - component: {fileID: 1402326722555783401}
-  m_Layer: 0
+  - component: {fileID: 5572609020024037132}
+  m_Layer: 9
   m_Name: Cell (22)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2936,6 +3720,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &5572609020024037132
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722555783406}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722609507984
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,9 +3757,10 @@ GameObject:
   - component: {fileID: 1402326722609508205}
   - component: {fileID: 1402326722609507986}
   - component: {fileID: 1402326722609507987}
-  m_Layer: 0
+  - component: {fileID: 1750963811900172859}
+  m_Layer: 9
   m_Name: Cell (26)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3030,6 +3841,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1750963811900172859
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722609507984}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722656842717
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,9 +3878,10 @@ GameObject:
   - component: {fileID: 1402326722656842718}
   - component: {fileID: 1402326722656842719}
   - component: {fileID: 1402326722656842716}
-  m_Layer: 0
+  - component: {fileID: 5406188655167689805}
+  m_Layer: 9
   m_Name: Cell (24)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3124,6 +3962,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &5406188655167689805
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722656842717}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722693185779
 GameObject:
   m_ObjectHideFlags: 0
@@ -3135,9 +3999,10 @@ GameObject:
   - component: {fileID: 1402326722693185740}
   - component: {fileID: 1402326722693185741}
   - component: {fileID: 1402326722693185778}
-  m_Layer: 0
+  - component: {fileID: 6649530332486736231}
+  m_Layer: 9
   m_Name: Cell (32)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3218,6 +4083,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &6649530332486736231
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722693185779}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722725663345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3229,9 +4120,10 @@ GameObject:
   - component: {fileID: 1402326722725663346}
   - component: {fileID: 1402326722725663347}
   - component: {fileID: 1402326722725663344}
-  m_Layer: 0
+  - component: {fileID: 7764786539872517286}
+  m_Layer: 9
   m_Name: Cell (17)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3312,6 +4204,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &7764786539872517286
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722725663345}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722822289933
 GameObject:
   m_ObjectHideFlags: 0
@@ -3323,9 +4241,10 @@ GameObject:
   - component: {fileID: 1402326722822289934}
   - component: {fileID: 1402326722822289935}
   - component: {fileID: 1402326722822289932}
-  m_Layer: 0
+  - component: {fileID: 3468934907322566091}
+  m_Layer: 9
   m_Name: Cell (9)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3406,6 +4325,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &3468934907322566091
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722822289933}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &1402326722854709433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,9 +4362,10 @@ GameObject:
   - component: {fileID: 1402326722854709434}
   - component: {fileID: 1402326722854709435}
   - component: {fileID: 1402326722854709432}
-  m_Layer: 0
+  - component: {fileID: 6740332618531189052}
+  m_Layer: 9
   m_Name: Cell (18)
-  m_TagString: Untagged
+  m_TagString: PlacementGrid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3500,3 +4446,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &6740332618531189052
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1402326722854709433}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
