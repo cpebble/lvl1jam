@@ -1,6 +1,6 @@
 #+TITLE:Why game jam?
-Speaker: Mads johansen @ mads<>
 * Why game jam?
+Speaker: Mads johansen @ mads<>
 ** Motivations:
 - It's not about winning
 - Try something new
@@ -25,11 +25,11 @@ Speaker: Mads johansen @ mads<>
   
 
 
-* Game jam structure:
-** Coming up with a game and prototype: 1-2 hours
-** Start over or playtest and iterate: 2-4h
-** Start over or add content and feel, playtest, UI. Tutorial: 1-2 days
-*** Content: Don't even bother. just make a fun toy
+** Game jam structure:
+*** Coming up with a game and prototype: 1-2 hours
+*** Start over or playtest and iterate: 2-4h
+*** Start over or add content and feel, playtest, UI. Tutorial: 1-2 days
+**** Content: Don't even bother. just make a fun toy
 
 ** Scoping!
 - 5 mins of game jam
@@ -43,3 +43,29 @@ Speaker: Mads johansen @ mads<>
   - GFX: Ogmo 2d editor
   - GFX: Dame 2d editor
 
+
+* Inspirational talk
+Speaker Amanda Rasmussen <amanda@spilvaerk.dk>
+** Anti-Imposter syndrome in five steps
+- Thick-rimmed glasse
+- Lots of stickers
+- Use words like "agency" and "immersion"
+- ???(designy things)
+- Profit!!
+
+** Imposter syndrome
+The assumption that you know a lot less than everyone else.
+The fear of being a fraud.
+
+The reality is that most people are close to you in level,
+talk to them, mingle, network and enjoy
+
+** Aknowledge your differences
+While you may intend to create a /horse/, the artist might
+envision a /unicorn/ and the programmer a /camel/
+
+** Is your idea doable?
+Make sure that What you think, reflects real life.
+Make sure that your ideas are doable in the alotted time
+
+** Be silly! <3
