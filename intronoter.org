@@ -1,0 +1,45 @@
+#+TITLE:Why game jam?
+Speaker: Mads johansen @ mads<>
+* Why game jam?
+** Motivations:
+- It's not about winning
+- Try something new
+- It's important to practice your craft.
+  - You always go through the same thing
+  - This is a chance to deep dive into something new, or something you
+    don't use that often
+- Finish a thing!
+
+** Practical:
+- It's ok not to conform to the usual structure
+- It's ok to not have a team, idea, plan or any idea what you're doing
+  - Mingle and network!
+- Remember to mingle
+
+** What can a game jam provide?
+- New friends
+- Networking^^
+- Motivational working environment
+- Tons of game testers, for when people take breaks from projects
+- *TAkE BREAkS*
+  
+
+
+* Game jam structure:
+** Coming up with a game and prototype: 1-2 hours
+** Start over or playtest and iterate: 2-4h
+** Start over or add content and feel, playtest, UI. Tutorial: 1-2 days
+*** Content: Don't even bother. just make a fun toy
+
+** Scoping!
+- 5 mins of game jam
+- Make core loop fun
+- Local multiplayer can be fun. Might not mean game is good, but might make
+  it more fun to develop
+** Tools:
+- What youre comfortable with(unless your goal is to try new things)
+- Use single-focus tools.
+  - SFXR/BFXR for sound
+  - GFX: Ogmo 2d editor
+  - GFX: Dame 2d editor
+
