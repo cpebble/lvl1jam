@@ -25,27 +25,49 @@ public class CurserSystem : MonoBehaviour
         {
             currentObject = col.transform.parent;
             objectOffset = (Vector2)currentObject.position - mousePos;
+            currentDragAble = currentObject.GetComponent<DragAbleObject>();
+
             if(currentObject.GetComponent<DragAbleObject>().IsOnGrid()){
                 currentObject.GetComponent<DragAbleObject>().RemoveFromGrid();
+                List<Cell> cells = currentDragAble.GetOverlapCells();
+                foreach (Cell c in cells) { c.inUse = false; }
+            }
+            else
+            {
+                currentObject.GetComponent<DragAbleObject>().oldPosition = currentObject.transform.position;
+                currentObject.GetComponent<DragAbleObject>().oldRotation = currentObject.transform.rotation;
             }
             currentDragAble = currentObject.GetComponent<DragAbleObject>();
+            currentDragAble.beingMoved = true;
         }
     }
     void Drop(){
+        
         if(CheckIfDropAble())
         {
-            currentDragAble.AddToGrid(placementGrid);   
+            List<Cell> cells = currentDragAble.GetOverlapCells();
+            foreach (Cell c in cells) { c.inUse = true; }
+            currentDragAble.AddToGrid(placementGrid);
         }
+        else
+            currentObject.transform.position = currentDragAble.oldPosition ;
+        currentDragAble.beingMoved = false;
+        currentDragAble = null;
         currentObject = null;
         objectOffset = Vector2.zero;
         
     }
     bool CheckIfDropAble(){
-        return currentObject != null && currentObject.GetComponent<DragAbleObject>().CheckIfOnGrid();
+        DragAbleObject dragobject = currentObject.GetComponent<DragAbleObject>();
+        return currentObject != null && dragobject.GetOverlapCells()?.Count == dragobject.cellAmount;
     }
     void MoveObject(){
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         currentObject.position = (Vector3)mousePos + (Vector3)objectOffset + new Vector3(0,0,-1);
+    }
+
+    void RotateObject(){
+        currentObject.Rotate(Vector3.forward * 90f);
     }
     // Update is called once per frame
     void Update()
@@ -55,8 +77,10 @@ public class CurserSystem : MonoBehaviour
         if(currentObject != null)
         {
             MoveObject();
+            if(Input.GetKeyDown(KeyCode.R))
+                RotateObject();
         }
-        if(Input.GetMouseButtonUp(0))
+        if(Input.GetMouseButtonUp(0) && currentDragAble != null)
             Drop();
     }
 }

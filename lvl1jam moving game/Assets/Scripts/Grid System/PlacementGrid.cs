@@ -6,19 +6,16 @@ public class PlacementGrid : MonoBehaviour
 {
     [SerializeField]
     Cell[] cells;
-
+    [SerializeField]
     List<DragAbleObject> heldObjects = new List<DragAbleObject>();
 
     //[SerializeField]
-    //private LayerMask gridLayer;
+    //private Color canPlaceHighlightColor, cantPlaceHighlightColor, defaultColor;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+
+    public void Color(Cell cells){
 
     }
-
-
     public void Place(DragAbleObject obj,LayerMask gridLayer)
     {
         Cell c = obj.GetCell(0);
@@ -33,16 +30,24 @@ public class PlacementGrid : MonoBehaviour
             return;
         obj.transform.position = obj.transform.position + (gridCell.transform.position - c.transform.position);
         obj.transform.position += new Vector3(0,0,-1);
+        AddObject(obj.GetComponent<DragAbleObject>());
     }
     public void RemoveObject(DragAbleObject obj)
     {
         if (heldObjects.Contains(obj))
+        {
             heldObjects.Remove(obj);
+            obj.transform.parent = null;
+        }
     }
-    public void CheckIfOnGrid()
+    public void AddObject(DragAbleObject obj)
     {
-
+        if (!heldObjects.Contains(obj)){
+            heldObjects.Add(obj);
+            obj.transform.parent = this.transform;
+        }
     }
+    
 
     // Update is called once per frame
     void Update()

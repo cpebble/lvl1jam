@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inUse: 0
 --- !u!61 &2597920167783413939
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -119,7 +120,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.05, y: 1.05}
   m_EdgeRadius: 0
 --- !u!1 &4541692781887097178
 GameObject:
@@ -216,6 +217,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inUse: 0
 --- !u!61 &8922304344979450595
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -240,7 +242,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.05, y: 1.05}
   m_EdgeRadius: 0
 --- !u!1 &4541692782237266305
 GameObject:
@@ -443,6 +445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inUse: 0
 --- !u!61 &4292783776943670842
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -467,7 +470,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.05, y: 1.05}
   m_EdgeRadius: 0
 --- !u!1 &4541692782486872140
 GameObject:
@@ -564,6 +567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22b501f9c84e7a34a938a66735127f32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inUse: 0
 --- !u!61 &7604654659729947123
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -588,5 +592,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.05, y: 1.05}
   m_EdgeRadius: 0

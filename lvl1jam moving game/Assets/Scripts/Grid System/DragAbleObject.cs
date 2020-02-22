@@ -8,27 +8,38 @@ public class DragAbleObject : MonoBehaviour
     Cell[] cells = new Cell[5];
     [SerializeField]
     LayerMask gridLayer;
-    
+    public int cellAmount {get { return cells.Length;}}
     private PlacementGrid currentGrid;
+    public bool beingMoved;
+    [HideInInspector]
+    public Vector3 oldPosition;
+    [HideInInspector]
+    public Quaternion oldRotation;
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    public List<Cell> connectedTo;
     public Cell GetCell(int index){
         return cells[0];
     }
     public void RemoveFromGrid(){
         currentGrid.RemoveObject(this);
+        currentGrid = null;
     }
     public void AddToGrid(PlacementGrid grid){
         grid.Place(this,gridLayer);
+        
         currentGrid = grid;
     }
     public bool IsOnGrid(){
         return currentGrid != null;
     }
-    public bool CheckIfOnGrid()
+    public void Update(){
+        if(!beingMoved && !IsOnGrid())
+            GetComponent<SpriteRenderer>().sortingOrder = -(int)(transform.position.y * 100f);
+        else
+            GetComponent<SpriteRenderer>().sortingOrder = 1000;
+
+    }
+    public List<Cell> GetOverlapCells()
     {
         List<Cell> overlapCells = new List<Cell>();
         foreach (Cell c in cells)
@@ -38,19 +49,13 @@ public class DragAbleObject : MonoBehaviour
             if (col != null && col.transform.CompareTag("PlacementGrid") && !col.transform.GetComponent<Cell>().inUse)
             {
                 if(overlapCells.Contains(c))
-                    return false;
+                    return null;
                 overlapCells.Add(col.GetComponent<Cell>());
             }
             else
-                return false;
+                return null;
         }
-        //print("overlap"+overlapCells.Count);
-        //print("cells:"+cells.Length);
-        return overlapCells.Count == cells.Length;
+        return overlapCells;
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
 }
