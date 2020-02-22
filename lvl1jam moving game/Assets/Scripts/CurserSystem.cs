@@ -14,14 +14,19 @@ public class CurserSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
-    void Grab(){
+    }
+    Collider2D ObjectUnderCursor()
+    {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Collider2D col;
-        col = Physics2D.OverlapPoint(mousePos,gridLayer,-100f,100f);
-        if(col != null && col.transform.CompareTag("DragAbleObject"))
+        return Physics2D.OverlapPoint(mousePos, gridLayer, -100f, 100f);
+
+    }
+    void Grab()
+    {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Collider2D col = ObjectUnderCursor();
+        if (col != null && col.transform.CompareTag("DragAbleObject"))
         {
             currentObject = col.transform.parent;
             objectOffset = (Vector2)currentObject.position - mousePos;
@@ -55,15 +60,22 @@ public class CurserSystem : MonoBehaviour
         currentDragAble = null;
         currentObject = null;
         objectOffset = Vector2.zero;
-        
+
     }
     bool CheckIfDropAble(){
         DragAbleObject dragobject = currentObject.GetComponent<DragAbleObject>();
         return currentObject != null && dragobject.GetOverlapCells()?.Count == dragobject.cellAmount;
     }
-    void MoveObject(){
+    void MoveObject()
+    {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        currentObject.position = (Vector3)mousePos + (Vector3)objectOffset + new Vector3(0,0,-1);
+        currentObject.position = (Vector3)mousePos + (Vector3)objectOffset + new Vector3(0, 0, -1);
+    }
+    void CheckForToolTips()
+    {
+        Collider2D col = ObjectUnderCursor();
+        col.GetComponent<ToolTip>().ShowTooltip();
+        print("Should");
     }
 
     void RotateObject(){
@@ -72,9 +84,10 @@ public class CurserSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        // Grabablelogic
+        if (Input.GetMouseButtonDown(0))
             Grab();
-        if(currentObject != null)
+        if (currentObject != null)
         {
             MoveObject();
             if(Input.GetKeyDown(KeyCode.R))
@@ -82,5 +95,8 @@ public class CurserSystem : MonoBehaviour
         }
         if(Input.GetMouseButtonUp(0) && currentDragAble != null)
             Drop();
+
+        // Tooltip logic
+        //CheckForToolTips();
     }
 }

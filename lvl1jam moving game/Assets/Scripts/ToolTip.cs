@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ToolTip : MonoBehaviour
+public class ToolTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
 
     [SerializeField]
@@ -37,5 +38,17 @@ public class ToolTip : MonoBehaviour
     {
         shouldShowTooltip = false;
     }
+    public void OnMouseOver()
+    {
 
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        ShowTooltip();
+    }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        HideTooltip();
+    }
 }
