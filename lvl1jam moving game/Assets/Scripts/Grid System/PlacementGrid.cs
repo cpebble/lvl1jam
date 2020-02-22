@@ -13,9 +13,7 @@ public class PlacementGrid : MonoBehaviour
     //private Color canPlaceHighlightColor, cantPlaceHighlightColor, defaultColor;
 
 
-    public void Color(Cell cells){
-
-    }
+    
     public void Place(DragAbleObject obj,LayerMask gridLayer)
     {
         Cell c = obj.GetCell(0);

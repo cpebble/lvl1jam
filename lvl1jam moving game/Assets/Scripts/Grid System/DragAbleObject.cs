@@ -16,7 +16,7 @@ public class DragAbleObject : MonoBehaviour
     [HideInInspector]
     public Quaternion oldRotation;
     // Start is called before the first frame update
-    public List<Cell> connectedTo;
+    public List<Cell> connectedToCells;
     public Cell GetCell(int index){
         return cells[0];
     }
@@ -26,7 +26,7 @@ public class DragAbleObject : MonoBehaviour
     }
     public void AddToGrid(PlacementGrid grid){
         grid.Place(this,gridLayer);
-        
+        connectedToCells = GetOverlapCells(false);
         currentGrid = grid;
     }
     public bool IsOnGrid(){
@@ -37,19 +37,14 @@ public class DragAbleObject : MonoBehaviour
             GetComponent<SpriteRenderer>().sortingOrder = -(int)(transform.position.y * 100f);
         else
             GetComponent<SpriteRenderer>().sortingOrder = 1000;
-
     }
-    public List<Cell> GetOverlapCells()
+    public List<Cell> GetOverlapCells(bool checkIfInUse)
     {
         List<Cell> overlapCells = new List<Cell>();
-        foreach (Cell c in cells)
-        {
+        foreach (Cell c in cells) {
             Collider2D col;
             col = Physics2D.OverlapPoint(c.transform.position, gridLayer, -100f, 100f);
-            if (col != null && col.transform.CompareTag("PlacementGrid") && !col.transform.GetComponent<Cell>().inUse)
-            {
-                if(overlapCells.Contains(c))
-                    return null;
+            if (col != null && col.transform.CompareTag("PlacementGrid") && (!col.transform.GetComponent<Cell>().inUse || !checkIfInUse)) {
                 overlapCells.Add(col.GetComponent<Cell>());
             }
             else
@@ -57,5 +52,4 @@ public class DragAbleObject : MonoBehaviour
         }
         return overlapCells;
     }
-    
 }

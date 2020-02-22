@@ -33,9 +33,9 @@ public class CurserSystem : MonoBehaviour
             currentDragAble = currentObject.GetComponent<DragAbleObject>();
 
             if(currentObject.GetComponent<DragAbleObject>().IsOnGrid()){
-                currentObject.GetComponent<DragAbleObject>().RemoveFromGrid();
-                List<Cell> cells = currentDragAble.GetOverlapCells();
+                List<Cell> cells = currentDragAble.GetOverlapCells(false);
                 foreach (Cell c in cells) { c.inUse = false; }
+                currentObject.GetComponent<DragAbleObject>().RemoveFromGrid();
             }
             else
             {
@@ -47,10 +47,9 @@ public class CurserSystem : MonoBehaviour
         }
     }
     void Drop(){
-        
         if(CheckIfDropAble())
         {
-            List<Cell> cells = currentDragAble.GetOverlapCells();
+            List<Cell> cells = currentDragAble.GetOverlapCells(true);
             foreach (Cell c in cells) { c.inUse = true; }
             currentDragAble.AddToGrid(placementGrid);
         }
@@ -60,11 +59,10 @@ public class CurserSystem : MonoBehaviour
         currentDragAble = null;
         currentObject = null;
         objectOffset = Vector2.zero;
-
     }
     bool CheckIfDropAble(){
-        DragAbleObject dragobject = currentObject.GetComponent<DragAbleObject>();
-        return currentObject != null && dragobject.GetOverlapCells()?.Count == dragobject.cellAmount;
+        DragAbleObject dragObject = currentObject.GetComponent<DragAbleObject>();
+        return currentObject != null && dragObject.GetOverlapCells(true)?.Count == dragObject.cellAmount;
     }
     void MoveObject()
     {
