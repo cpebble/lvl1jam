@@ -22,7 +22,7 @@ public class DragAbleObject : MonoBehaviour
         currentGrid.RemoveObject(this);
     }
     public void AddToGrid(PlacementGrid grid){
-        grid.Place(this);
+        grid.Place(this,gridLayer);
         currentGrid = grid;
     }
     public bool IsOnGrid(){
@@ -35,12 +35,14 @@ public class DragAbleObject : MonoBehaviour
         {
             Collider2D col;
             col = Physics2D.OverlapPoint(c.transform.position, gridLayer, -100f, 100f);
-            if (col != null && col.transform.CompareTag("PlacementGrid"))
+            if (col != null && col.transform.CompareTag("PlacementGrid") && !col.transform.GetComponent<Cell>().inUse)
             {
                 if(overlapCells.Contains(c))
                     return false;
                 overlapCells.Add(col.GetComponent<Cell>());
             }
+            else
+                return false;
         }
         //print("overlap"+overlapCells.Count);
         //print("cells:"+cells.Length);

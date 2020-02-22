@@ -9,8 +9,8 @@ public class PlacementGrid : MonoBehaviour
 
     List<DragAbleObject> heldObjects = new List<DragAbleObject>();
 
-    [SerializeField]
-    private LayerMask gridLayer;
+    //[SerializeField]
+    //private LayerMask gridLayer;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class PlacementGrid : MonoBehaviour
     }
 
 
-    public void Place(DragAbleObject obj)
+    public void Place(DragAbleObject obj,LayerMask gridLayer)
     {
         Cell c = obj.GetCell(0);
         Collider2D col;
@@ -32,6 +32,7 @@ public class PlacementGrid : MonoBehaviour
         else
             return;
         obj.transform.position = obj.transform.position + (gridCell.transform.position - c.transform.position);
+        obj.transform.position += new Vector3(0,0,-1);
     }
     public void RemoveObject(DragAbleObject obj)
     {

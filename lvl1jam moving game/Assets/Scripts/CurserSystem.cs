@@ -23,7 +23,6 @@ public class CurserSystem : MonoBehaviour
         col = Physics2D.OverlapPoint(mousePos,gridLayer,-100f,100f);
         if(col != null && col.transform.CompareTag("DragAbleObject"))
         {
-            
             currentObject = col.transform.parent;
             objectOffset = (Vector2)currentObject.position - mousePos;
             if(currentObject.GetComponent<DragAbleObject>().IsOnGrid()){
@@ -42,11 +41,11 @@ public class CurserSystem : MonoBehaviour
         
     }
     bool CheckIfDropAble(){
-        return currentObject.GetComponent<DragAbleObject>().CheckIfOnGrid();
+        return currentObject != null && currentObject.GetComponent<DragAbleObject>().CheckIfOnGrid();
     }
     void MoveObject(){
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        currentObject.position = mousePos + objectOffset;
+        currentObject.position = (Vector3)mousePos + (Vector3)objectOffset + new Vector3(0,0,-1);
     }
     // Update is called once per frame
     void Update()
