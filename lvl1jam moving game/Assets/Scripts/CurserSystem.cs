@@ -14,49 +14,68 @@ public class CurserSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-    }
 
-    void Grab(){
+    }
+    Collider2D ObjectUnderCursor()
+    {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Collider2D col;
-        col = Physics2D.OverlapPoint(mousePos,gridLayer,-100f,100f);
-        if(col != null && col.transform.CompareTag("DragAbleObject"))
+        return Physics2D.OverlapPoint(mousePos, gridLayer, -100f, 100f);
+
+    }
+    void Grab()
+    {
+        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Collider2D col = ObjectUnderCursor();
+        if (col != null && col.transform.CompareTag("DragAbleObject"))
         {
             currentObject = col.transform.parent;
             objectOffset = (Vector2)currentObject.position - mousePos;
-            if(currentObject.GetComponent<DragAbleObject>().IsOnGrid()){
+            if (currentObject.GetComponent<DragAbleObject>().IsOnGrid())
+            {
                 currentObject.GetComponent<DragAbleObject>().RemoveFromGrid();
             }
             currentDragAble = currentObject.GetComponent<DragAbleObject>();
         }
     }
-    void Drop(){
-        if(CheckIfDropAble())
+    void Drop()
+    {
+        if (CheckIfDropAble())
         {
-            currentDragAble.AddToGrid(placementGrid);   
+            currentDragAble.AddToGrid(placementGrid);
         }
         currentObject = null;
         objectOffset = Vector2.zero;
-        
+
     }
-    bool CheckIfDropAble(){
+    bool CheckIfDropAble()
+    {
         return currentObject != null && currentObject.GetComponent<DragAbleObject>().CheckIfOnGrid();
     }
-    void MoveObject(){
+    void MoveObject()
+    {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        currentObject.position = (Vector3)mousePos + (Vector3)objectOffset + new Vector3(0,0,-1);
+        currentObject.position = (Vector3)mousePos + (Vector3)objectOffset + new Vector3(0, 0, -1);
+    }
+    void CheckForToolTips()
+    {
+        Collider2D col = ObjectUnderCursor();
+        col.GetComponent<ToolTip>().ShowTooltip();
+        print("Should");
     }
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        // Grabablelogic
+        if (Input.GetMouseButtonDown(0))
             Grab();
-        if(currentObject != null)
+        if (currentObject != null)
         {
             MoveObject();
         }
-        if(Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0))
             Drop();
+
+        // Tooltip logic
+        //CheckForToolTips();
     }
 }
