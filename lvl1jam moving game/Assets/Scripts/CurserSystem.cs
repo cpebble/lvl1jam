@@ -7,7 +7,7 @@ public class CurserSystem : MonoBehaviour, ILevelEventHandler
     [SerializeField]
     LayerMask gridLayer;
     [SerializeField]
-    private PlacementGrid placementGrid;
+    private PlacementGrid placementGrid,trashCan;
     private Transform currentObject;
     private DragAbleObject currentDragAble;
     private Vector2 objectOffset;
@@ -49,7 +49,27 @@ public class CurserSystem : MonoBehaviour, ILevelEventHandler
             currentDragAble.beingMoved = true;
         }
     }
+    bool CheckIfTrashcan()
+    {
+        List<Cell> cells = currentDragAble.GetOverlapCells(false);
+        if(cells == null || cells.Count == 0)
+            return false;
+        foreach (Cell c in cells)
+        {
+            if(c.transform.parent != null && c.transform.parent.GetComponent<PlacementGrid>().IsTrashcan)
+                return true;
+        }
+        return false;
+    }
     void Drop(){
+        if(CheckIfTrashcan())
+        {
+            Destroy(currentObject.gameObject);
+            currentDragAble = null;
+            currentObject = null;
+            objectOffset = Vector3.zero;
+            return;
+        }
         if(CheckIfDropAble())
         {
             List<Cell> cells = currentDragAble.GetOverlapCells(true);
@@ -57,7 +77,7 @@ public class CurserSystem : MonoBehaviour, ILevelEventHandler
             currentDragAble.AddToGrid(placementGrid);
         }
         else
-            currentObject.transform.position = currentDragAble.oldPosition ;
+            currentObject.transform.position = currentDragAble.oldPosition;
         currentDragAble.beingMoved = false;
         currentDragAble = null;
         currentObject = null;
@@ -82,6 +102,7 @@ public class CurserSystem : MonoBehaviour, ILevelEventHandler
 
     void RotateObject(){
         currentObject.Rotate(Vector3.forward * 90f);
+        currentObject.GetChild(currentObject.childCount-1).Rotate(-Vector3.forward * 90f);
     }
     // Update is called once per frame
     void Update()

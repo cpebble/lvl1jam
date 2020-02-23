@@ -25,9 +25,9 @@ public class DragAbleObject : MonoBehaviour
         currentGrid = null;
     }
     public void AddToGrid(PlacementGrid grid){
-        grid.Place(this,gridLayer);
+        currentGrid = GameObject.Find("Placement Grid").GetComponent<PlacementGrid>();
+        currentGrid.Place(this,gridLayer);
         connectedToCells = GetOverlapCells(false);
-        currentGrid = grid;
     }
     public bool IsOnGrid(){
         return currentGrid != null;

@@ -11,7 +11,8 @@ public class PlacementGrid : MonoBehaviour
 
     //[SerializeField]
     //private Color canPlaceHighlightColor, cantPlaceHighlightColor, defaultColor;
-
+    
+    public bool IsTrashcan;
 
 
     public void Place(DragAbleObject obj, LayerMask gridLayer)

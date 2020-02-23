@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ChildBedroom
   m_EditorClassIdentifier: 
   levelGameObject: {fileID: 0}
-  PlacementGrid: {fileID: 1251975089588302415, guid: 692c19f7881d99644adb5f3463007db6,
+  PlacementGrid: {fileID: 7474697406046510523, guid: 484d214024e2c3d48851aa1ba3aa028f,
     type: 3}
   NewItems:
   - {fileID: 2424180548060859948, guid: e07676c72b1ca6f4a9e661b8dec3d5c7, type: 3}

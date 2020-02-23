@@ -15,5 +15,5 @@ MonoBehaviour:
   AnimationWaiting: 0
   currentLevel: 1
   Levels:
-  - {fileID: 11400000, guid: 015a0abd74788e6b49795c31e4bde02a, type: 2}
+  - {fileID: 11400000, guid: 314a7ca94ab59894eb939c15a15bbd0b, type: 2}
   - {fileID: 11400000, guid: 314a7ca94ab59894eb939c15a15bbd0b, type: 2}

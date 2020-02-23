@@ -9,14 +9,15 @@ public class TransistionSystem : MonoBehaviour, ILevelEventHandler
     public LevelLoader levelManager;
     void Start(){
         levelManager.RegisterEventHandler(this);
+        GameObject.Find("LevelController");
     }
     public void SetAnimationValue(int value){
         levelManager.AnimationWaiting = value != 1 ? true : false;
     }
-    public void StartTransistion(){
+    public void StartTransition(){
         transistionAnimation.Play();
     }
-    public void EndTransistion(){
+    public void EndTransition(){
 
     }
 
@@ -25,7 +26,7 @@ public class TransistionSystem : MonoBehaviour, ILevelEventHandler
         switch (state)
         {
             case LevelLoadState.PREUNLOAD:
-                StartTransistion();
+                StartTransition();
                 break;
         }
     }
