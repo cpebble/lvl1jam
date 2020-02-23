@@ -7,15 +7,15 @@ public class PlacementGrid : MonoBehaviour
     [SerializeField]
     Cell[] cells;
     [SerializeField]
-    List<DragAbleObject> heldObjects = new List<DragAbleObject>();
+    public List<DragAbleObject> heldObjects = new List<DragAbleObject>();
 
     //[SerializeField]
     //private Color canPlaceHighlightColor, cantPlaceHighlightColor, defaultColor;
     
     public bool IsTrashcan;
 
-    
-    public void Place(DragAbleObject obj,LayerMask gridLayer)
+
+    public void Place(DragAbleObject obj, LayerMask gridLayer)
     {
         Cell c = obj.GetCell(0);
         Collider2D col;
@@ -28,7 +28,7 @@ public class PlacementGrid : MonoBehaviour
         else
             return;
         obj.transform.position = obj.transform.position + (gridCell.transform.position - c.transform.position);
-        obj.transform.position += new Vector3(0,0,-1);
+        obj.transform.position += new Vector3(0, 0, -1);
         AddObject(obj.GetComponent<DragAbleObject>());
     }
     public void RemoveObject(DragAbleObject obj)
@@ -41,12 +41,13 @@ public class PlacementGrid : MonoBehaviour
     }
     public void AddObject(DragAbleObject obj)
     {
-        if (!heldObjects.Contains(obj)){
+        if (!heldObjects.Contains(obj))
+        {
             heldObjects.Add(obj);
             obj.transform.parent = this.transform;
         }
     }
-    
+
 
     // Update is called once per frame
     void Update()

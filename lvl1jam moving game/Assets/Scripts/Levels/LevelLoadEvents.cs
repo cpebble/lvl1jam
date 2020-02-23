@@ -56,7 +56,7 @@ public class LevelLoader : ScriptableObject
         {
             throw new KeyNotFoundException();
         }
-        
+
         // Level unloading/cleanup
         RaiseEvent(LevelLoadState.PREUNLOAD);
         while (!AnimationWaiting)
@@ -73,6 +73,7 @@ public class LevelLoader : ScriptableObject
         RaiseEvent(LevelLoadState.PRELOAD);
         // Load the level
         RegisterEventHandler(Levels[levelIndex]);
+        Levels[levelIndex].loader = this;
         RaiseEvent(LevelLoadState.LOAD);
         RaiseEvent(LevelLoadState.POSTLOAD);
 
@@ -82,4 +83,10 @@ public class LevelLoader : ScriptableObject
         LoadLevel((currentLevel + 1) % Levels.Count);
     }
 
+    //  ___ _                     
+    // |_ _| |_ ___ _ __ ___  ___ 
+    //  | || __/ _ \ '_ ` _ \/ __|
+    //  | || ||  __/ | | | | \__ \
+    // |___|\__\___|_| |_| |_|___/
+    public List<GameObject> ItemCarryOver;
 }
