@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: New Level Loader
+  m_Name: LevelManager
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
   currentLevel: 0
   Levels:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 015a0abd74788e6b49795c31e4bde02a, type: 2}
