@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e14ba5dd753f85a25b2d12cee18d50a3, type: 3}
   m_Name: TestLevel
   m_EditorClassIdentifier: 
-  PlacementGrid: {fileID: 0}
+  levelGameObject: {fileID: 0}
+  PlacementGrid: {fileID: 1402326721701804763, guid: b95dd3dbf3d411544abc3587ac4c4fb8,
+    type: 3}
   NewItems: []
+  Decoration: {fileID: 6294255920236088509, guid: 827f3754fbffa244b88711e60acbb549,
+    type: 3}

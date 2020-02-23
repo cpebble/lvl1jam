@@ -6,10 +6,12 @@ using UnityEngine;
 [Serializable]
 public class Level : ScriptableObject, ILevelEventHandler
 {
-    private GameObject levelGameObject;
+    public GameObject levelGameObject;
     public GameObject PlacementGrid;
     private List<GameObject> items;
     public List<GameObject> NewItems;
+    public GameObject Decoration;
+    private GameObject decorationContainer; 
 
     public void HandleEvent(LevelLoadState state)
     {
@@ -21,6 +23,7 @@ public class Level : ScriptableObject, ILevelEventHandler
                 {
                     items.Add(Instantiate(item));
                 }
+                decorationContainer = Instantiate(Decoration);
 
                 break;
             case LevelLoadState.UNLOAD:
@@ -31,6 +34,7 @@ public class Level : ScriptableObject, ILevelEventHandler
                     Destroy(item);
                 }
                 items.Clear();
+                Destroy(decorationContainer);
                 break;
         }
     }

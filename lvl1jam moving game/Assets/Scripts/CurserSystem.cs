@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CurserSystem : MonoBehaviour
+public class CurserSystem : MonoBehaviour, ILevelEventHandler
 {
     [SerializeField]
     LayerMask gridLayer;
@@ -11,10 +11,13 @@ public class CurserSystem : MonoBehaviour
     private Transform currentObject;
     private DragAbleObject currentDragAble;
     private Vector2 objectOffset;
+
+    [SerializeField]
+    private LevelLoader levelMan;
     // Start is called before the first frame update
     void Start()
     {
-
+        levelMan.RegisterEventHandler(this);
     }
     Collider2D ObjectUnderCursor()
     {
@@ -71,6 +74,7 @@ public class CurserSystem : MonoBehaviour
     }
     void CheckForToolTips()
     {
+
         Collider2D col = ObjectUnderCursor();
         col.GetComponent<ToolTip>().ShowTooltip();
         print("Should");
@@ -96,5 +100,15 @@ public class CurserSystem : MonoBehaviour
 
         // Tooltip logic
         //CheckForToolTips();
+    }
+
+    public void HandleEvent(LevelLoadState state)
+    {
+        switch (state)
+        {
+            case LevelLoadState.POSTLOAD:
+                placementGrid =  levelMan.Levels[levelMan.currentLevel].levelGameObject.GetComponent<PlacementGrid>();
+                break;
+        }
     }
 }

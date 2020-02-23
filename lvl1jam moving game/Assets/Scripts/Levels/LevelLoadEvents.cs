@@ -43,19 +43,28 @@ public class LevelLoader : ScriptableObject
     // | |   / _ \ \ / / _ \ / __|
     // | |__|  __/\ V /  __/ \__ \
     // |_____\___| \_/ \___|_|___/
-
+    public bool AnimationWaiting = false;
     public int currentLevel;
     public List<Level> Levels;
-
     public void LoadLevel(int levelIndex)
+    {
+        CoroutineRunner.instance.StartCoroutine(Load(levelIndex));
+    }
+    private IEnumerator Load(int levelIndex)
     {
         if (levelIndex >= Levels.Count)
         {
             throw new KeyNotFoundException();
         }
+        
         // Level unloading/cleanup
         RaiseEvent(LevelLoadState.PREUNLOAD);
+        while (!AnimationWaiting)
+        {
+            yield return null;
+        }
         RaiseEvent(LevelLoadState.UNLOAD);
+
         // The old level isn't accessible after current level has been loaded
         UnRegisterEventHandler(Levels[currentLevel]);
         RaiseEvent(LevelLoadState.POSTUNLOAD);

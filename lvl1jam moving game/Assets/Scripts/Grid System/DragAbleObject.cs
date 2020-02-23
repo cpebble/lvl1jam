@@ -38,6 +38,9 @@ public class DragAbleObject : MonoBehaviour
         else
             GetComponent<SpriteRenderer>().sortingOrder = 1000;
     }
+    void OnDestroy(){
+        print("Hello World");
+    }
     public List<Cell> GetOverlapCells(bool checkIfInUse)
     {
         List<Cell> overlapCells = new List<Cell>();
