@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ToolTipCanvas : MonoBehaviour
 {
-    private static Vector2 offset = new Vector2(2.3f, -1.2f);
+    private static Vector2 offset = new Vector2(3.3f, -1.5f);
     private RectTransform tf;
     // Start is called before the first frame update
     void Start()
