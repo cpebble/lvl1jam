@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CurserSystem : MonoBehaviour
+public class CurserSystem : MonoBehaviour, ILevelEventHandler
 {
     [SerializeField]
     LayerMask gridLayer;
@@ -11,10 +11,13 @@ public class CurserSystem : MonoBehaviour
     private Transform currentObject;
     private DragAbleObject currentDragAble;
     private Vector2 objectOffset;
+
+    [SerializeField]
+    private LevelLoader levelMan;
     // Start is called before the first frame update
     void Start()
     {
-
+        levelMan.RegisterEventHandler(this);
     }
     Collider2D ObjectUnderCursor()
     {
@@ -33,9 +36,9 @@ public class CurserSystem : MonoBehaviour
             currentDragAble = currentObject.GetComponent<DragAbleObject>();
 
             if(currentObject.GetComponent<DragAbleObject>().IsOnGrid()){
-                currentObject.GetComponent<DragAbleObject>().RemoveFromGrid();
-                List<Cell> cells = currentDragAble.GetOverlapCells();
+                List<Cell> cells = currentDragAble.GetOverlapCells(false);
                 foreach (Cell c in cells) { c.inUse = false; }
+                currentObject.GetComponent<DragAbleObject>().RemoveFromGrid();
             }
             else
             {
@@ -47,10 +50,9 @@ public class CurserSystem : MonoBehaviour
         }
     }
     void Drop(){
-        
         if(CheckIfDropAble())
         {
-            List<Cell> cells = currentDragAble.GetOverlapCells();
+            List<Cell> cells = currentDragAble.GetOverlapCells(true);
             foreach (Cell c in cells) { c.inUse = true; }
             currentDragAble.AddToGrid(placementGrid);
         }
@@ -60,11 +62,10 @@ public class CurserSystem : MonoBehaviour
         currentDragAble = null;
         currentObject = null;
         objectOffset = Vector2.zero;
-
     }
     bool CheckIfDropAble(){
-        DragAbleObject dragobject = currentObject.GetComponent<DragAbleObject>();
-        return currentObject != null && dragobject.GetOverlapCells()?.Count == dragobject.cellAmount;
+        DragAbleObject dragObject = currentObject.GetComponent<DragAbleObject>();
+        return currentObject != null && dragObject.GetOverlapCells(true)?.Count == dragObject.cellAmount;
     }
     void MoveObject()
     {
@@ -73,6 +74,7 @@ public class CurserSystem : MonoBehaviour
     }
     void CheckForToolTips()
     {
+
         Collider2D col = ObjectUnderCursor();
         col.GetComponent<ToolTip>().ShowTooltip();
         print("Should");
@@ -98,5 +100,15 @@ public class CurserSystem : MonoBehaviour
 
         // Tooltip logic
         //CheckForToolTips();
+    }
+
+    public void HandleEvent(LevelLoadState state)
+    {
+        switch (state)
+        {
+            case LevelLoadState.POSTLOAD:
+                placementGrid =  levelMan.Levels[levelMan.currentLevel].levelGameObject.GetComponent<PlacementGrid>();
+                break;
+        }
     }
 }

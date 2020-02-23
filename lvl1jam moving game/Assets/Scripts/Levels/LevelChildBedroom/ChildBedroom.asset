@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e14ba5dd753f85a25b2d12cee18d50a3, type: 3}
+  m_Name: ChildBedroom
+  m_EditorClassIdentifier: 
+  levelGameObject: {fileID: 0}
+  PlacementGrid: {fileID: 1251975089588302415, guid: 692c19f7881d99644adb5f3463007db6,
+    type: 3}
+  NewItems:
+  - {fileID: 2424180548060859948, guid: e07676c72b1ca6f4a9e661b8dec3d5c7, type: 3}
+  - {fileID: 4652821611548777110, guid: e2d06b0c4be550e43aba50989d959a09, type: 3}
+  - {fileID: 3260282695137925874, guid: f1e362eaf3d83224498d5a15539d7b6d, type: 3}
+  - {fileID: 4743010989010212953, guid: 5a36f8e1b12149142ac10e74112fecfd, type: 3}
+  Decoration: {fileID: 3629958373710287584, guid: 26d9ebbfd61b6e842ab6466802aab190,
+    type: 3}
